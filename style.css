@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-----background-----*/
+.style{
+	width: 1920px;
+	background-image: url("image-index/background.jpg");
+}
+
+/*-----header-----*/
+.header-main{
+	width: 1296px;
+	gap: 24px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.swiper-group{
+	width: 306px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	gap: 28px;
+}
+.viewpoint-group{
+	width: 232px;
+}
+.frame10{
+	width: 232px;
+	padding-left: 80px;
+	gap: 10px;
+}
+.view-tw{
+	width: 152px;
+	height: 152px;
+	border-radius: 200px;
+	border: 4px solid #FFFFFF;
+}
+.frame11{
+	width: 164px;
+	height: 164px;
+	gap: 10px;
+}
+.view-tw1{
+	width: 164px;
+	height: 164px;
+	border-radius: 200px;
+	border: 4px solid #FFFFFF;
+}
+.frame12{
+	width: 232px;
+	height: 164px;
+	gap: 10px;
+}
+.view-tw2{
+	width: 152px;
+	height: 1px;
+	border-radius: 200px;
+	border: 4px solid #FFFFFF;
+}
+
+
+/*-----sections-----*/
+.page-wrap{
+	width: 1296px;
+	margin: auto;
+	border: 5px solid gray;
+	
+}
+/*introduce*/
+.introduce{
+	padding-top: 208px;
+	padding-bottom: 120px;
+}
+
+.introduce-title h2{
+	display: inline;
+	font-family: Noto Serif TC;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38.4px;
+	color: #212121;
+	font-weight: bold;
+	border-bottom: 9px solid #B1D6CA;
+	
+}
+
+.introduce-card{
+	margin-top: 50px;
+	width: 1296px;
+	display: flex;
+	justify-content: space-between;
+
+}
+.introduce-item{
+	background: #f2f2f2;
+	border: 2px solid #D4D4D4;
+	border-radius: 28px;
+	padding-top: 40px;
+	padding-right: 48px;
+	padding-bottom: 40px;
+	padding-left: 28px;
+	text-align: center;
+}
+.introduce-item h4{
+	width: 320px;
+	height: 29px;
+	font-family: Noto Serif TC;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28.8px;
+	text-align: center;
+}
+.introduce-item p{
+	width: 320px;
+	height: 150px;
+	font-family: Noto Sans TC;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+}
+/*-----shopping-----*/
+.title-main h2{
+	display: inline;
+	font-family: Noto Serif TC;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38.4px;
+	color: #212121;
+	font-weight: bold;
+	border-bottom: 9px solid #B1D6CA;
+}
+/*-----appliance-----*/
+.appliance-title h2{
+	display: inline;
+	font-family: Noto Serif TC;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38.4px;
+	color: #212121;
+	font-weight: bold;
+	border-bottom: 9px solid #B1D6CA;
+}
+.appliance-wrap{
+	width: 1296px;
+	height: 686px;
+	display: flex;
+	justify-content: center;
+}
+.shopping-img{
+	width: 526px;
+	height: 526px;
+	border: 4px solid #FFFFFF;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.appliance-switch{
+	position: relative;
+	width: 297px;
+}
+.appliance-switch button {
+	width: 124px;
+	height: 124px;
+	border-radius: 100px;
+	border: 2px solid #333333;
+	padding-top: 12px;
+	padding-right: 24px;
+	padding-bottom: 12px;
+	padding-left: 24px;
+	gap: 8px;
+
+}
+.weather{
+	position: absolute;
+	top: 15px;
+}
+.rate{
+	position: absolute;
+	top: 137px;
+	left: 96px;
+}
+.rent{
+	position: absolute;
+	top: 281px;
+	left: 130px;
+}
+.map{
+	position: absolute;
+	top: 425px;
+	left: 96px;
+}
+.culture{
+	position: absolute;
+	top: 547px;
+}
+
+.appliance-content{
+	position: relative;
+	width: 416px;
+	height: 416px;
+	border-radius: 420px;
+	padding-top: 32px;
+	padding-right: 48px;
+	padding-bottom: 32px;
+	padding-left: 48px;
+	background: pink;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.appliance-content p{
+	width: 320px;
+	height: 101px;
+	font-family: Noto Serif TC;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 33.6;
+	text-align: center;
+}
+.mountain{
+	width: 180px;
+	height: 180px;
+	position:absolute;
+	right: 0;
+	border-top: -20px;
+}
+.star{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+}
+
+
+
+/*-----recommend-----*/
+.recommend-title h2{
+	display: inline;
+	font-family: Noto Serif TC;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38.4px;
+	color: #212121;
+	font-weight: bold;
+	border-bottom: 9px solid #B1D6CA;
+
+}
+
+/*-----footer-----*/
+.footer{
+	background: pink;
+}
+
+.footer-wrap{
+	margin: auto;
+	max-width: 1296px;
+	height: 227px;
+	padding-top: 60px;
+	padding-bottom: 120px;
+	position: relative;
+}
+
+.footer-main{
+	display: flex;
+	justify-content: space-between;
+	width: 1296px;
+	height: 166px;
+	gap: 32px;
+}
+.footer-about{
+	display: flex;
+	width: 984px;
+	height: 166px;
+	gap: 48px;
+}
+.logo-main{
+	width: 344px;
+}
+.logo-main img{
+	padding-bottom: 20px;
+}
+.logo-main li{
+	padding-bottom: 8px;
+	font-family: Noto Sans TC;
+	font-size: 16px;
+	line-height: 24px;
+	color: #212121;
+	letter-spacing: 9%;
+}
+
+/*中間*/
+.link-main{
+	display:flex;
+	font-family: Noto Sans TC;	
+	text-align: center;
+	gap: 36px;
+}
+.link-main li{
+	font-size: 16px;
+	line-height: 24px;
+	weight: 700px;
+	padding-top: 4px;
+	padding-right: 12px;
+	padding-left: 12px;
+	padding-bottom: 4px;
+}
+.link-main .name{
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+	weight: 700px;
+	padding-top: 4px;
+	padding-right: 12px;
+	padding-left: 12px;
+	padding-bottom: 4px;
+}
+
+
+/*右邊*/
+.footer-right{
+	width: 236px;
+	gap: 20px;
+	border: 2px solid gray;
+}
+.social-main{
+	width: 160px;
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+
+}
+.footer-content{
+	font-family: Noto Sans TC;
+	font-size: 14px;
+	line-height: 21px;
+	color: #D4D4D4;
+	text-align: right;
+}
+
+/*下面*/
+.copyright{
+	width: 206px;
+	height: 21px;
+	font-family: Noto Sans TC;
+	font-weight:700;
+	font-size: 14px;
+	line-height: 21;
+	color: #939393;
+	position: absolute;
+	left:0px;
+	top:100px;
+}
