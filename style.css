@@ -119,32 +119,53 @@ table {
 .header1-title{
 	width: 218px;
 	border: 2px solid blue;
-	background: pink;
+	background: #FFFFFF;
 }
 .header1-title-content{
-	width: 132px;
 	border: 2px solid purple;
+	margin:auto;
+	margin-top: 100px;
 	display: flex;
+	justify-content: center;
+	gap: 10px;
 }
 .header1-title-content p{
-	writing-mode: vertical-lr;
+	writing-mode: vertical-rl;
 	font-family: Noto Serif TC;
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 62.4px;
+	letter-spacing: 16%;
 	color: #212121;
 	gap: 10px;
 	border: 2px solid orangered;
 }
-.header1-title .p1{
-	padding-top: 50px;
+.header1-button{
+	writing-mode: horizontal-tb;
+	margin-top: 50px;
+  	display: flex;
+  	justify-content: center;
+  	gap: 10px;	
 }
-.header1-button img{
+
+.header1-button .btn-dark{
 	width: 60px;
 	height: 60px;
-	border-radius: 100px;
+	border-radius: 100%;
+	padding: 10px;
 	border: 2px solid #333333;
+	background: #333333;
 }
+.header1-button .btn{
+	background: rgb(245, 237, 239);
+	border: 2px solid #333333;
+	padding: 10px;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+
+
 .header1-scroll-down{
 	width: 100%;
 	display: flex;
@@ -201,7 +222,7 @@ table {
 	padding-left: 48px;
 	border-radius: 28px;
 	border: 2px solid #D4D4D4;
-	background: aqua;
+	background: #F2F2F2;
 	vertical-align: middle;
 
 }
@@ -445,8 +466,97 @@ table {
 	width: 1296px;
 	padding-top: 80px;
 	padding-bottom: 80px;
+	display: flex;
+	align-content: center;
 	border: 2px solid orange;
+	position: relative;
 }
+.feature-left{
+	width: 868px;
+}
+.feature-left img{
+	width: 526px;
+	height: 526px;
+	border-radius:100px;
+	border: 4px solid #FFFFFF;
+}
+.feature-middle{
+	width: 297px;
+	height: 686px;
+	border: 2px solid gold;
+	position: relative;
+	position: absolute;
+	right: 550px;
+	top: 0;
+}
+.feature-middle button{
+	font-family: Noto Sans TC;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 9%;
+	color: #5B5B5B;
+	text-align: center;
+
+	width: 124px;
+	height: 124px;
+	border-radius: 100px;
+
+	gap: 8px;
+	border: 2px solid #333333;
+}
+.weather{
+	position: absolute;
+	top: 15px;
+}
+.rate{
+	position: absolute;
+	top: 137px;
+	left: 96px;
+}
+.rent{
+	position: absolute;
+	top: 281px;
+	left: 130px;
+}
+.maps{
+	position: absolute;
+	top: 425px;
+	left: 96px;
+}
+.culture{
+	position: absolute;
+	top: 547px;
+}
+
+
+.feature-right p{
+	font-family: Noto Serif TC;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 33.6px;
+	letter-spacing: 13%;
+	color: #212121;
+	text-align: center;
+
+	width: 416px;
+	height: 416px;
+	border-radius: 420px;
+
+	gap: 8px;
+	border: 2px solid #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---content-recommend--- */
 .recommend-main{
@@ -456,6 +566,8 @@ table {
 	border: 2px solid orange;
 }
 .recommend-list{
+	width: 1296px;
+	border: 2px solid darkcyan;
 	gap: 24px;
 	display: flex;
 	position: relative;
@@ -491,25 +603,21 @@ table {
 	padding-bottom: 40px;
 	padding-left: 32px;
 	gap: 16px;
-	background: lightgoldenrodyellow;
+	background: #FFFFFF;
 	position: relative;
+}
+.recommend-item .user-img{
+
+	width: 72px;
+	height: 72px;
+	position: absolute;
+	top: -45px;
 }
 .user-name{
 	display: flex;
 	gap: 8px;
 	padding-bottom: 10px;
 	border: 2px solid yellowgreen;
-}
-.user-name img{
-	width: 28px;
-	height: 28px;
-}
-.recommend-item .user-img{
-	border-radius: 50px;
-	width: 72px;
-	height: 72px;
-	position: absolute;
-	top: -45px;
 }
 .recommend-item .p1{
 	width: 64px;
@@ -519,6 +627,10 @@ table {
 	line-height: 30px;
 	letter-spacing: 10%;
 	color: #333333
+}
+.user-name img{
+	width: 28px;
+	height: 28px;
 }
 .recommend-item .p2{
 	width: 120px;
@@ -559,7 +671,7 @@ table {
 }
 
 
-/*-----footer-----*/
+/*footer*/
 .footer{
 	background: pink;
 }
@@ -567,7 +679,6 @@ table {
 .footer-wrap{
 	margin: auto;
 	max-width: 1296px;
-	height: 227px;
 	padding-top: 60px;
 	padding-bottom: 120px;
 	position: relative;
@@ -577,17 +688,16 @@ table {
 	display: flex;
 	justify-content: space-between;
 	width: 1296px;
-	height: 166px;
 	gap: 32px;
 }
 .footer-about{
 	display: flex;
 	width: 984px;
-	height: 166px;
 	gap: 48px;
 }
 .logo-main{
 	width: 344px;
+	gap: 32px;
 }
 .logo-main img{
 	padding-bottom: 20px;
@@ -601,7 +711,7 @@ table {
 	letter-spacing: 9%;
 }
 
-/*中間*/
+/* ---footer-middle--- */
 .link-main{
 	display:flex;
 	font-family: Noto Sans TC;	
@@ -611,7 +721,7 @@ table {
 .link-main li{
 	font-size: 16px;
 	line-height: 24px;
-	weight: 700px;
+	font-weight: 700;
 	padding-top: 4px;
 	padding-right: 12px;
 	padding-left: 12px;
@@ -621,7 +731,7 @@ table {
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 30px;
-	weight: 700px;
+	font-weight: 700;
 	padding-top: 4px;
 	padding-right: 12px;
 	padding-left: 12px;
@@ -629,7 +739,7 @@ table {
 }
 
 
-/*右邊*/
+/* ---footer-right--- */
 .footer-right{
 	width: 236px;
 	gap: 20px;
@@ -650,16 +760,15 @@ table {
 	text-align: right;
 }
 
-/*下面*/
+/* ---footer-down--- */
 .copyright{
 	width: 206px;
 	height: 21px;
 	font-family: Noto Sans TC;
 	font-weight:700;
 	font-size: 14px;
-	line-height: 21;
+	line-height: 21px;
 	color: #939393;
 	position: absolute;
-	left:0px;
-	top:100px;
+	bottom: 0;
 }
