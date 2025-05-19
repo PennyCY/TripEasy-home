@@ -673,7 +673,7 @@ table {
 
 /*footer*/
 .footer{
-	background: pink;
+	background: #FFFFFF;
 }
 
 .footer-wrap{
@@ -726,6 +726,9 @@ table {
 	padding-right: 12px;
 	padding-left: 12px;
 	padding-bottom: 4px;
+}
+.link-main li:hover{
+	color:#B1D6CA;
 }
 .link-main .name{
 	font-weight: bold;
