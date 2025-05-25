@@ -46,19 +46,162 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*-----background-----*/
+
+
+
+/*background*/
 
 .style{
-	width: 1920px;
-    background-image: url(image-index/img-background.jpg);;
-}
+	max-width: 1920px;
+	background-image: url(image-index/img-background.jpg);
+	}
 .header-main{
-	width: 1296px;
+	max-width: 1296px;
 	margin-left: auto;
 	margin-right: auto;
 	border: 2px solid gray;
+	}
+
+
+@media (max-width: 992px) {
+.header-main{
+	border: 3px solid red;
+	}
 }
+
+/* ---bg手機板--- */
+@media (max-width:375px) {
+.header-main{
+	border: 2px solid greenyellow;	
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 12px;
+	padding-right: 12px;
+	}
+}
+
 /*---layout---*/
+/* nav */
+.nav{
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #FFFFFF;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-main{
+	width: 553px;
+	gap: 36px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;;
+}
+.nav-brand{
+	width: 138px;
+	height: 39px;
+}
+.searchbar{
+	width: 251px;
+	border-radius: 100px;
+	padding-top: 8px;
+	padding-right: 20px;
+	padding-bottom: 8px;
+	padding-left: 20px;
+	gap: 48px;
+	color: #F2F2F2;
+
+	border: 1px solid #D4D4D4;
+}
+.searchbar input{
+	border:none;
+}
+
+.search-button{
+	width: 24px;
+	height: 24px;
+	border:none;
+}
+.language-exchange{
+	width: 92px;
+	height: 44px;
+	border-radius: 100px;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	gap: 4px;
+	background: #F2F2F2;
+	border:1px solid #D4D4D4;
+}
+.language-exchange button{
+	width: 36px;
+	height: 36px;
+	border-radius: 40px;
+	padding: 4px;
+
+	font-family: Noto Sans TC;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: 7%;
+	text-align: center;
+	color: #939393
+}
+.nav-menu-main{
+	width: 640px;
+	gap: 28px;
+	display: flex;
+	justify-content: space-around;
+}
+.nav-menu{
+	display: flex;
+	width: 488px;
+	gap: 20px;
+}
+.nav-menu li{
+	width: 118px;
+	padding-top: 8px;
+	padding-right: 10px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+
+	font-family: Noto Sans TC;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 10%;
+	color: #5B5B5B;
+	text-align: center;
+}
+.nav-menu li:hover{
+	color: #B1D6CA;
+}
+
+.login-botton{
+	min-width: 124px;
+	border-radius: 100px;
+	border:2px solid #5B5B5B;
+	padding-top: 12px;
+	padding-right: 24px;
+	padding-bottom: 12px;
+	padding-left: 24px;
+	gap: 8px;
+
+	font-family: Noto Sans TC;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 9%;
+	text-align: center;
+	color: #5B5B5B;
+}
+.login-botton:hover{
+	background:#333333;
+	color: #FFFFFF;
+}
+
+
 /*header1*/
 .header1{
 	padding-top: 80px;
@@ -186,28 +329,42 @@ table {
 }
 
 
-/* header2 */
-
 /* content */
 .content{
-	padding-top: 208px;
-	padding-bottom: 120px;
 	gap: 40px;
 	border: 2px solid black;
+	padding-top: 208px;
+	padding-bottom: 120px;
 }
 .content h2{
 	display: inline;
 	font-family: Noto Serif TC;
 	font-weight: 700;
+	border-bottom: 9px solid #B1D6CA;
 	font-size: 32px;
 	line-height: 38.4px;
-	border-bottom: 9px solid #B1D6CA;
+	letter-spacing: 14%;
 }
+
+/* ---connect手機板--- */
+@media (max-width:375px) {
+.content{
+	width: 375px;
+	padding-right: 12px;
+	padding-left: 12px;
+	}
+.content h2{
+	font-size: 28px;
+	line-height: 33.6px;
+	letter-spacing: 13%;
+	}
+}
+
 
 /* ---content-introduce--- */
 
 .introduce-main{
-	width: 1296px;
+	max-width: 1296px;
 	padding-top: 60px;
 	padding-bottom: 120px;
 	gap: 16px;
@@ -224,7 +381,6 @@ table {
 	border: 2px solid #D4D4D4;
 	background: #F2F2F2;
 	vertical-align: middle;
-
 }
 .introduce-item h3{
 	font-family: Noto Serif TC;
@@ -234,6 +390,7 @@ table {
 	line-height: 28.8px;
 	text-align: center;
 	padding-bottom: 20px;
+	color: #333333;
 }
 .introduce-item img{
 	display: block;
@@ -252,6 +409,34 @@ table {
 	text-align: center;
 	letter-spacing: 10%;
 }
+@media (max-width:375px) {
+	.introduce-main{
+		padding-right: 12px;
+		padding-left: 12px;
+		flex-wrap: wrap;
+	}
+	.introduce-item{
+	max-width: 327px;
+	padding-top: 32px;
+	padding-right: 28px;
+	padding-bottom: 32px;
+	padding-left: 28px;
+	border-radius: 28px;
+	}
+	.introduce-item h3{
+		width: 271px;
+		text-align: center;
+		letter-spacing: 12%;
+	}
+	.introduce-item p{
+		width: 271px;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 9%;
+	}
+}
+
+
 /* ---content-shopping--- */
 .shopping-main{
 	width: 1296px;
@@ -262,6 +447,15 @@ table {
 	display: flex;	
 	justify-content: space-between;
 }
+@media (max-width:375px) {
+	.shopping-main{
+		padding-bottom: 60px;
+		gap: 40px;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+
 .shopping-content{
 	width: 636px;
 	border: 2px solid pink;
@@ -461,6 +655,7 @@ table {
 	bottom: -80px;
 }
 
+
 /* ---content-feature--- */
 .feature-main{
 	width: 1296px;
@@ -468,11 +663,14 @@ table {
 	padding-bottom: 80px;
 	display: flex;
 	align-content: center;
+	justify-content: space-between;
 	border: 2px solid orange;
 	position: relative;
 }
 .feature-left{
-	width: 868px;
+	width: 800px;
+	position: relative;
+	border: 2px solid blueviolet;
 }
 .feature-left img{
 	width: 526px;
@@ -486,8 +684,8 @@ table {
 	border: 2px solid gold;
 	position: relative;
 	position: absolute;
-	right: 550px;
-	top: 0;
+	top: -70px;
+	right: 50px;
 }
 .feature-middle button{
 	font-family: Noto Sans TC;
@@ -528,13 +726,18 @@ table {
 	position: absolute;
 	top: 547px;
 }
+.circle{
+	width: 671.32px;
+	height: 155.3656768798829px;
+	
+	
+}
 
-
-.feature-right p{
+.feature-right {
 	font-family: Noto Serif TC;
 	font-weight: 700;
 	font-size: 28px;
-	line-height: 33.6px;
+	line-height: 35px;
 	letter-spacing: 13%;
 	color: #212121;
 	text-align: center;
@@ -607,10 +810,10 @@ table {
 	position: relative;
 }
 .recommend-item .user-img{
-
 	width: 72px;
 	height: 72px;
 	position: absolute;
+	border-radius: 50%;
 	top: -45px;
 }
 .user-name{
@@ -727,7 +930,7 @@ table {
 	padding-left: 12px;
 	padding-bottom: 4px;
 }
-.link-main li:hover{
+.link-main .details:hover {
 	color:#B1D6CA;
 }
 .link-main .name{
