@@ -664,6 +664,9 @@ a{
 
 
 /* ---content-shopping--- */
+.shopping-hide{
+	display: none;
+}
 .shopping-main{
 	width: 1296px;
 	padding-top: 60px;
@@ -673,15 +676,6 @@ a{
 	display: flex;	
 	justify-content: space-between;
 }
-@media (max-width:375px) {
-	.shopping-main{
-		padding-bottom: 60px;
-		gap: 40px;
-		justify-content: center;
-		flex-direction: column;
-	}
-}
-
 .shopping-content{
 	width: 636px;
 	border: 2px solid pink;
@@ -809,6 +803,20 @@ a{
 	letter-spacing: 10%;
 	color: #212121;	
 }
+.favorite{
+	opacity: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	padding: 7px;
+	border: none;
+	text-align: center;
+}
+.favorite:hover{
+	opacity: 1.0;
+}
+
+
 .num-switch{
 	width: 636px;
 	gap: 12px;
@@ -816,13 +824,13 @@ a{
 	justify-content: center;
 	align-items: center;
 }
-.num-switch button{
+.num-switch a{
 	width: 32px;
 	height: 32px;
 	border-radius: 20px;
 	padding: 7px;
-	background: #D4D4D4;
 	border: none;
+	background: #F2F2F2;
 }
 .right{
 		transform:rotate(180deg);
@@ -870,7 +878,7 @@ a{
 	top: 60px;
 	right: -80px;
 }
-.shopping-img button{
+.shopping-img a{
 	width: 122px;
 	gap: 4px;
 	font-family: Noto Sans TC;
@@ -878,11 +886,28 @@ a{
 	font-size: 20px;
 	line-height: 30px;
 	letter-spacing: 10%;
+	color: #333333;
 
 	position: absolute;
 	right: 0px;
 	bottom: -80px;
 }
+/* shopping手機直式版 */
+@media (max-width:375px){
+	.shopping-content{
+		display: none;
+	}
+	.shopping-main{
+		width: 100%;
+	}
+	.shopping-hide{
+		display: block;
+	}
+	.shopping-hide img{
+		width: 295px;
+	}
+}
+
 
 
 /* ---content-feature--- */
