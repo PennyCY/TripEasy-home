@@ -119,9 +119,9 @@ a{
 	top: 450px;
 	left: 0;
 }
-.world{
+/* .world{
 	display: none;
-}
+} */
 .banner-img{
 	width: 60%;
 	height: auto;
@@ -179,8 +179,11 @@ a{
 	
 }
 .banner-button .btn-TW:hover{
-	background-image: url(image-index/banner/icon-TW.png);
 	background: #333333;
+	background-image: url(image-index/banner/icon-TW.png);
+	background-repeat: no-repeat; /*不重複*/
+	background-position: center; /*置中對齊*/
+
 }
 .banner-button .btn-world{
 	background: #F2F2F2;
@@ -192,7 +195,13 @@ a{
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
+.banner-button .btn-world:hover{
+	background: #333333;
+	background-image: url(image-index/banner/World.png);
+	background-repeat: no-repeat; /*不重複*/
+	background-position: center; /*置中對齊*/
+	
+}
 
 .banner-scroll-down{
 	width: 100%;
@@ -213,6 +222,7 @@ a{
 	background-image: url(image-index/banner/icon-down.png);
 	border: none;
 }
+
 
 /*---banner平板直式板--- */
 @media (max-width:768px) {
@@ -732,13 +742,26 @@ a{
 	gap: 8px;
 	border: 2px solid red;
 }
-.product{
+.product-hover1{
 	/* width: 95%; */
 	padding-top: 20px;
 	border: 2px solid green;
 	display: flex;
 	justify-content: space-between;
-	
+}
+.product-hover2{
+	/* width: 95%; */
+	padding-top: 20px;
+	border: 2px solid green;
+	display: flex;
+	justify-content: space-between;
+}
+.product-hover3{
+	/* width: 95%; */
+	padding-top: 20px;
+	border: 2px solid green;
+	display: flex;
+	justify-content: space-between;
 }
 .hr{
 	width: 636px;
@@ -858,12 +881,12 @@ a{
 	border-radius: 200px;
 	border: 4px solid #FFFFFF;
 }
-.shopping-img2{
+/* .shopping-img2{
 	display: none;
 }
 .shopping-img3{
 	display: none;
-}
+} */
 .shopping-img .icon-map{
 	width: 120px;
 	height: 120px;
@@ -1001,45 +1024,48 @@ a{
 /* ---content-feature--- */
 .feature-main{
 	width: 100%;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding: 150px 0px;
 	display: flex;
-	align-content: center;
+	align-items: center;
 	justify-content: space-between;
 	border: 2px solid orange;
-	position: relative;
 }
 .feature-left{
-	/* width: 800px; */
-	position: relative;
+	width: 40%;
+	padding: 80px 0px; 
+	/* position: relative; */
 	border: 2px solid blueviolet;
 }
 .feature-left img{
-	/* width: 526px;
-	height: 526px; */
-	border-radius:100px;
+	width: 100%;
+	border-radius:300px;
 	border: 4px solid #FFFFFF;
 }
 .feature-middle{
-	width: 297px;
+	width: 23%;
 	height: 686px;
 	border: 2px solid gold;
+	margin-right:-50px;
+	margin-left: -30px;
 	position: relative;
-	position: absolute;
-	top: -70px;
-	right: 50px;
+	/* position: absolute;
+	top: 0px;
+	right: 0px; */
 }
 .feature-middle input{
 	font-family: Noto Sans TC;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 24px;
-	letter-spacing: 9%;
 	color: #5B5B5B;
+	background: #F2F2F2;
 	text-align: center;
+	cursor:pointer;
+
 
 	width: 124px;
-	height: 124px;
+	height:124px;
+
 	border-radius: 100px;
 
 	gap: 8px;
@@ -1058,7 +1084,7 @@ a{
 	top: 137px;
 	left: 96px;
 }
-.rent{
+.hotel{
 	position: absolute;
 	top: 281px;
 	left: 130px;
@@ -1072,44 +1098,72 @@ a{
 	position: absolute;
 	top: 547px;
 }
-.circle{
-	width: 671.32px;
-	height: 155.3656768798829px;	
+
+/* .feature-middle-line{
+	width: 13%;
+	border: brown 2px solid;
+	position: absolute;
+	top: -10px;
+	right: -150px;
+
+} */
+.feature-curve{
+	margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.curve-container {
+    width: 20vw;
+    max-width: 200px;
+    aspect-ratio: 1 / 3;
+}
+
+svg {
+    width: 100%;
+	height: 100%;
+}
+
+.dot {
+    fill: #ccc;
+    transition: fill 0.3s;
+    cursor: pointer;
+	z-index: 10;
+}
+
+.dot:hover {
+    fill: #333333;
+}
+
+.path {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2;
+ }
+
+
+
 
 .feature-right {
-	width: 416px;
-	height: 416px;
-margin-right: 48px;
-margin-top: 32px;
-	border-radius: 420px;
-	align-items: center;
-
-	gap: 8px;
-	border: 2px solid #333333;
-}
-.feature-right span{
+	width: 32%;
+	/* height: 416px; */
+	text-align: center;
+	flex-wrap: wrap;
 	font-family: Noto Serif TC;
 	font-weight: 700;
 	font-size: 28px;
-	line-height: 35px;
-	letter-spacing: 13%;
-	color: #212121;
+	line-height: 80px;
+	border: #212121 2px solid;
+	margin-right: 48px;
+	padding:0px 40px;
 }
-
-
-
-
-
-
-
 
 
 
 
 /* ---content-recommend--- */
 .recommend-main{
-	width: 1296px;
+	width: 100%;
 	padding-top: 150px;
 	padding-bottom: 80px;
 	border: 2px solid orange;
@@ -1121,7 +1175,7 @@ margin-top: 32px;
 	display: flex;
 	position: relative;
 }
-.recommend-list .arrow-left{
+.arrow-left{
 	width: 28px;
 	height: 28px;
 	border-radius: 50em;
@@ -1132,7 +1186,7 @@ margin-top: 32px;
 	top:45%;
 	left: -8%;
 }
-.recommend-list .arrow-right{
+.arrow-right{
 	width: 28px;
 	height: 28px;
 	border-radius: 50em;
@@ -1145,7 +1199,7 @@ margin-top: 32px;
 	right: -8%;
 }
 .recommend-item{
-	width: 306px;
+	width: 25%;
 	border-radius: 12px;
 	padding-top: 52px;
 	padding-right: 32px;
@@ -1154,10 +1208,11 @@ margin-top: 32px;
 	gap: 16px;
 	background: #FFFFFF;
 	position: relative;
+	flex-wrap: wrap;
 }
-.recommend-item .user-img{
-	width: 72px;
-	height: 72px;
+.user-img{
+	width: 20%;
+	/* height: 72px; */
 	position: absolute;
 	border-radius: 50%;
 	top: -45px;
@@ -1167,50 +1222,58 @@ margin-top: 32px;
 	gap: 8px;
 	border: 2px solid yellowgreen;
 }
-.recommend-item .p1{
+.p1{
 	width: 64px;
 	font-family: Noto Sans TC;
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 30px;
-	letter-spacing: 10%;
-	color: #333333
+	/* letter-spacing: 10%; */
+	color: #333333;
+	text-overflow: ellipsis;
 }
 .user-name img{
 	width: 28px;
 	height: 28px;
 }
-.recommend-item .p2{
+.p2{
 	width: 120px;
 	font-family: Noto Sans TC;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 24px;
-	letter-spacing: 9%;
-	color: #5B5B5B
+	/* letter-spacing: 9%; */
+	color: #5B5B5B;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .recommend-hashtag{
-	width: 242px;
+	width: 80%;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-top: 1px solid #d4d4d4;
 }
-.recommend-item .p3{
+.p3{
 	font-family: Noto Sans TC;
 	font-weight: 700;
 	font-size: 20px;
 	line-height:30px;
-	letter-spacing: 10%;
-	color: #212121	
+	/* letter-spacing: 10%; */
+	color: #212121	;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
-.recommend-item .p4{
-	width: 242px;
+
+.p4{
+	width: 80%;
 	font-family: Noto Sans TC;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	letter-spacing: 9%;
-	color: #5B5B5B
+	/* letter-spacing: 9%; */
+	color: #5B5B5B;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 /* recommend平板直式版 */
 @media (max-width:768px) {

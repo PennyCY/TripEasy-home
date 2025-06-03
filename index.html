@@ -48,14 +48,14 @@
             <img src="image-index/banner/icon-star.png" alt="icon-star" class="banner-star">
             <img src="image-index/banner/icon-map.png" alt="icon-map" class="banner-map">
             <div class="banner-views-wrap">
-              <a href="#"><img src="image-index/banner/img-view1.jpg" alt="view1" id="tw" class="view1-margin"></a>
-              <a href="#"><img src="image-index/banner/img-view2.jpg" alt="view2" id="tw" class="view2-margin"></a>
-              <a href="#"><img src="image-index/banner/img-view3.jpg" alt="view3" id="tw" class="view3-margin"></a>
-              <a href="#"><img src="image-index/banner/img-view4.jpg" alt="view4" id="tw" class="view4-margin"></a>
-              <a href="#"><img src="image-index/banner/img-view5.jpg" alt="view5" id="world" class="world"></a>
+              <a href="#"><img src="image-index/banner/img-view1.jpg" alt="view1" id="Tw-world-1" class="view1-margin"></a>
+              <a href="#"><img src="image-index/banner/img-view2.jpg" alt="view2" id="Tw-world-2" class="view2-margin"></a>
+              <a href="#"><img src="image-index/banner/img-view3.jpg" alt="view3" id="Tw-world-3" class="view3-margin"></a>
+              <a href="#"><img src="image-index/banner/img-view4.jpg" alt="view4" id="Tw-world-4" class="view4-margin"></a>
+              <!-- <a href="#"><img src="image-index/banner/img-view5.jpg" alt="view5" id="world" class="world"></a>
               <a href="#"><img src="image-index/banner/img-view6.jpg" alt="view6" id="world" class="world"></a>
               <a href="#"><img src="image-index/banner/img-view7.jpg" alt="view7" id="world" class="world"></a>
-              <a href="#"><img src="image-index/banner/img-view8.jpg" alt="view8" id="world" class="world"></a>
+              <a href="#"><img src="image-index/banner/img-view8.jpg" alt="view8" id="world" class="world"></a> -->
             </div> 
           </div>
           <div class="banner-img">
@@ -66,8 +66,8 @@
               <p>讓旅行更輕鬆<br>&emsp;讓世界更近！</p>
             </div>
             <div class="banner-button">
-              <input type="button" class="btn-TW" alt="台灣" id="btn-TW">
-              <input type="button" class="btn-world" alt="地球" id="btn-world">
+              <input type="button" class="btn-TW" alt="台灣">
+              <input type="button" class="btn-world" alt="地球">
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@
                 <input type="button" value="美食專區" name="food" id="">
                 <input type="button" value="旅程專區" name="journey" id="">
                 <div class="product-list">
-                  <div class="product">
+                  <div class="product-hover1">
                     <div class="product-label-name">
                       <div class="label">
                         <ul>
@@ -165,7 +165,7 @@
                     <img src="image-index/icon/favorite-line.png" class="favorite"alt="favorite-line">
                   </div>
                   <hr></hr>
-                  <div class="product">
+                  <div class="product-hover2">
                     <div class="product-label-name">
                       <div class="label">
                         <ul>
@@ -183,7 +183,7 @@
                     <img src="image-index/icon/favorite-line.png" class="favorite"alt="favorite-line">
                   </div>
                   <hr></hr>
-                  <div class="product">
+                  <div class="product-hover3">
                     <div class="product-label-name">
                       <div class="label">
                         <ul>
@@ -209,12 +209,11 @@
               </div>
             </div>
             <div class="shopping-img">
-              <img src="image-index/shopping/img-shopping view1.png" alt="高雄承億酒店的圖片">
-              <img src="image-index/shopping/img-shopping view2.png" alt="日本｜東京青年商旅" class="shopping-img2">
-              <img src="image-index/shopping/img-shopping view3.png" alt="美國｜洛杉磯豪華酒店" class="shopping-img3">
+              <img id="shopping" src="image-index/shopping/img-shopping view1.png" alt="高雄承億酒店的圖片">
               <img src="image-index/shopping/icon-map.png" alt="icon-map" class="icon-map">
               <img src="image-index/shopping/icon-cloud.png" alt="icon-cloud" class="icon-cloud">
               <a href="#">查看更多</a>
+              
               
           </div> 
           <div class="shopping-hide">
@@ -250,22 +249,41 @@
  <!-- ------旅遊神器------ -->
         <h2>旅遊神器</h2>
           <div class="feature-main">
-            <div class="feature-left">
-              <img src="image-index/feature/img-rain.png" alt="rainyday">
-              <div class="feature-middle">
-                <input type="button" value="天氣查詢" class="weather">
-                <input type="button" value="匯率查詢" class="rate">
-                <input type="button" value="機票/租車 查詢" class="rent">
-                <input type="button" value="互動地圖" class="maps">
-                <input type="button" value="文化介紹" class="culture">
-              </div>
-              <div class="circle">
 
+            <div class="feature-left">
+              <img id="feature" src="image-index/feature/weather.png" alt="rainyday">
+             </div> 
+
+            <div class="feature-middle">
+              <a href="#"><input type="button" value="天氣查詢" class="weather"></a>
+               <a href="#"><input type="button" value="匯率查詢" class="rate"></a>
+               <a href="#"><input type="button" value="機票/租車查詢" class="hotel"></a>
+               <a href="#"><input type="button" value="互動地圖" class="maps"></a>
+               <a href="#"><input type="button" value="文化介紹" class="culture"></a>
+            </div>
+             
+            <div class="feature-curve">
+              <div class="curve-container">
+                <svg viewBox="0 0 100 300" preserveAspectRatio="xMidYMid meet">
+                  <!-- 曲線 -->
+                  <path d="M 5 0 C 80 50, 80 250, 5 300" class="path" />
+
+                  <!-- 節點圓點 -->
+                  <circle cx="8" cy="4" r="4" class="dot" />
+                  <circle cx="48" cy="65" r="4" class="dot" />
+                  <circle cx="61" cy="150" r="4" class="dot" />
+                  <circle cx="48" cy="235" r="4" class="dot" />
+                  <circle cx="9" cy="296" r="4" class="dot" />
+                </svg>
               </div>
             </div>
+            
             <div class="feature-right">
-                <span>隨時查詢即時天氣，提<br>供溫度、降雨與風速資<br>訊，讓你安心出門</span>
+                <img src="image-index/feature/icon-star.png" alt="icon-star">
+                <div class="feature-right-text">隨時查詢即時天氣，提<br>供溫度、降雨與風速資<br>訊，讓您安心出門</div>
+                <img src="image-index/feature/icon-mountain.png" alt="icon-mountain">
             </div>
+            
           </div>
  <!-- ------好評專區------ -->
         <h2>好評專區</h2>
