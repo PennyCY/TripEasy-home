@@ -123,12 +123,10 @@ a{
 	display: none;
 } */
 .banner-img{
-	width: 60%;
+	width: 55%;
 	height: auto;
 	border: 2px solid blue;
-	padding-top: 24px;
-	padding-left: 24px;
-	padding-right: 112px;
+	padding: 40px 59px;
 }
 .banner-img img{
 	width: 100%;
@@ -554,6 +552,11 @@ a{
 
 }
 
+/* ------testttt--------- */
+/* .swiper {
+  width: 386px;
+  height: 579px;
+} */
 
 
 /* content */
@@ -1029,6 +1032,7 @@ a{
 	align-items: center;
 	justify-content: space-between;
 	border: 2px solid orange;
+	position: relative;
 }
 .feature-left{
 	width: 40%;
@@ -1142,22 +1146,80 @@ svg {
  }
 
 
-
-
 .feature-right {
-	width: 32%;
-	/* height: 416px; */
+	width: 35%;
+	height: 35%;
 	text-align: center;
 	flex-wrap: wrap;
 	font-family: Noto Serif TC;
 	font-weight: 700;
 	font-size: 28px;
-	line-height: 80px;
-	border: #212121 2px solid;
+	line-height: 70px;
+
+	border-radius: 200px;
 	margin-right: 48px;
-	padding:0px 40px;
+	padding:5px 40px;
+	background-color: #ffffff;
+	position: relative;
+}
+.feature-star{
+	position: absolute;
+	top: -10%;
+	left: -15%;
+}
+.feature-mountain{
+	position: absolute;
+	bottom: -45%;
+	right: -25%;
 }
 
+
+/*---feature平板直式版--- */
+@media (max-width:768px) {
+	.feature-main{
+		flex-wrap: wrap;
+	}
+	.feature-left{
+		width: 100%;
+		padding: 40px 0px;
+	}
+	.feature-middle{
+		width: 100%;
+		height: auto;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.feature-right{
+		width: 100%;
+		height: auto;
+		margin-right: 0px;
+		padding: 20px 0px;
+	}
+	
+}
+/*---feature手機直式版--- */
+@media (max-width:375px) {
+	.feature-main{
+		flex-wrap: wrap;
+	}
+	.feature-left{
+		width: 100%;
+		padding: 40px 0px;
+	}
+	.feature-middle{
+		width: 100%;
+		height: auto;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.feature-right{
+		width: 100%;
+		height: auto;
+		margin-right: 0px;
+		padding: 20px 0px;
+	}
+	
+}
 
 
 
