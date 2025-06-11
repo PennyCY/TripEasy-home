@@ -1,0 +1,140 @@
+/* 全域樣式 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    height: 100%;	
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*background*/
+
+.style{
+	background-image: url(../image-index/background.jpg);
+    font-family: Noto Sans TC;
+	}
+
+/* searchbar */
+.faq-searchbar{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    border:1px solid #BCBCBC;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.searchbar{
+    width: 100%;
+    font-size: 16px;
+    border: none;
+}
+.container{
+	max-width: 1296px;
+	margin: 0 auto;
+	border: 2px solid gray;
+	}
+
+.left-side{
+    float: left;
+    background: #fff;
+    border: 1px #333333 solid;
+    width: 30%;
+    padding: 40px 20px;
+    line-height: 50px;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: #5B5B5B;
+}
+
+.left-side ul li:hover, .left-side ul li:active{
+    background: #FFF7DD;
+    font-weight: 500;
+    border-radius: 20px;
+    color: #DAA509;
+    font-size: 22px;
+}
+.right-side{
+    float: right;
+    border: 1px #333333 solid;
+    width: 70%;
+    padding: 40px 20px;
+    font-size: 20px;
+    line-height: 25px;
+}
+/* --------------------- */
+.question{
+    overflow-y:scroll;
+    height: 10%;
+    
+}
+.question  label {
+		display : block;
+		width : 100%;
+		text-align : center;
+		border-radius : 5px;
+		background-color : #ccc;
+		margin-top : 10px;
+		padding : 6px 12px;
+		cursor : pointer;
+	}
+.content {
+		height : 0px;
+		background-color : #fff;
+		overflow : hidden;
+		transition : 0.5s;
+	}
+	input[type=radio]:checked + .content {
+		height : 100px;
+	}
+
+    input[type=radio] {
+		display : none;
+	}
+
+
+
+
+
+
+
+
+
+
+/* .question input{
+    display: none;
+}
+.question h2{
+    border: #333333 1px solid;
+    color: #333333;
+    background: #BCBCBC;
+    cursor: pointer;
+}
+
+.question h2:hover{
+    background: #f2f2f2;
+    color: #80A397;
+}
+.question p{
+    height: 0;
+    overflow: hidden;
+    padding: 10px;
+} */
+
+
+
+
+
