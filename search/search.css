@@ -1,0 +1,144 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 48px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.right-text,
+.right-text-2 {
+  position: absolute;
+  right: 5%;
+  color: white;
+  line-height: 1.6;
+  font-size: 16px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.right-text {
+  top: 10%;
+}
+
+.right-text-2 {
+  top: 45%;
+}
+
+/* 篩選表單區 */
+.filters {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.filters form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filters input,
+.filters select,
+.filters button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.filters button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+/* 商品列表 */
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.product {
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.product .info {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.product .info h3 {
+  margin: 0 0 10px;
+}
+
+.product .price {
+  font-weight: bold;
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+.product button {
+  margin-top: 10px;
+  padding: 6px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 分頁 */
+.pagination {
+  text-align: center;
+  padding: 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  background-color: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background-color: #333;
+  color: white;
+}
