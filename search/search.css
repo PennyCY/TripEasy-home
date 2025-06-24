@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: "Noto Sans TC", sans-serif;
   margin: 0;
   background-color: #f5f5f5;
@@ -46,7 +46,7 @@ body {
 }
 
 /* 篩選表單區 */
-.filters {
+/* .filters {
   background-color: #fff;
   padding: 20px;
   text-align: center;
@@ -72,10 +72,10 @@ body {
   background-color: #007bff;
   color: white;
   cursor: pointer;
-}
+} */
 
 /* 商品列表 */
-.product-list {
+/* .product-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -121,10 +121,10 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
+} */
 
 /* 分頁 */
-.pagination {
+/* .pagination {
   text-align: center;
   padding: 20px;
 }
@@ -141,4 +141,890 @@ body {
 .pagination .active {
   background-color: #333;
   color: white;
+} */ 
+
+/* 通用樣式 */
+/* body {
+    font-family: 'Noto Sans TC', 'Arial', sans-serif;  */
+    /* 考慮使用思源黑體或其他支援中文的字體 */
+    /* margin: 0;
+    line-height: 1.8; */
+     /* 稍微增加行高，讓文字更易讀 */
+    /* background-color: #f8f8f8;
+    color: #333;
+} */
+
+/* Hero Banner 區塊
+.hero-banner {
+    width: 100%; 
+    /* 確保橫幅佔滿整個寬度 */
+    /* height: 400px;  */
+    /* 設定橫幅的高度，您可以根據圖片比例和需求調整 */
+    /* background-image: url('Banner.jpg');  */
+    /* 設定背景圖片 */
+    /* background-position: center center;  */
+    /* 圖片居中 */ 
+    /* background-repeat: no-repeat;  */
+    /* 不重複 */
+    /* background-size: cover;  */
+    /* 圖片覆蓋整個區塊，並保持比例 */
+    /* position: relative;  */
+    /* 關鍵：讓子元素的絕對定位相對於此區塊 */
+    /* display: flex; */
+     /* 使用 Flexbox 垂直置中文字 */
+    /* align-items: center;  */
+    /* 垂直居中 */
+    /* justify-content: center; */
+     /* 水平居中（如果內容只是一行，會影響不大）*/
+    /* overflow: hidden;  */
+    /* 確保圖片不超出範圍 */
+/* }  */
+
+/* Banner 上的疊加層，用於放置文字 */
+/* .banner-overlay { */
+    /* position: absolute; 
+    相對於 .hero-banner 進行絕對定位 */
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;  */
+    /* 再次使用 Flexbox 來控制文字的位置 */
+    /* align-items: center; */
+     /* 讓文字在 Y 軸上居中 */
+    /* padding: 0 5%;  */
+    /* 左右內邊距 */
+    /* box-sizing: border-box;  */
+    /* 讓 padding 不會增加寬度 */
+    /* background-color: rgba(0, 0, 0, 0.2); /* 可以考慮加一個半透明的背景，讓文字更清晰 */
+/* } */
+
+/* .banner-title {
+    color: white;
+    font-size: 3.5rem;  */
+    /* 購物專區的文字大小 */
+    /* font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  */
+    /* 文字陰影增加可讀性 */
+    /* flex-grow: 1;  */
+    /* 讓標題佔據大部分空間，將右側文字推到右邊 */
+    /* text-align: center;  */
+    /* 讓購物專區的文字居中 */
+    /* margin-left: -15%;  */
+    /* 微調購物專區的位置，讓它看起來更靠左一點 */
+/* } */
+
+
+/* .banner-text-right {
+    color: white;
+    font-size: 1.1rem;  */
+    /* 右側詩句的文字大小 */
+    /* line-height: 1.5;  */
+    /* 行高 */
+    /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    display: flex;  */
+    /* 使用 Flexbox 來排列詩句的段落 */
+    /* flex-direction: row-reverse;  */
+    /* 讓段落從右到左排列 */
+    /* white-space: nowrap;  */
+    /* 防止詩句換行，保持單行顯示 */
+    /* justify-content: flex-end;  */
+    /* 將內容推到最右邊 */
+    /* margin-right: 5%;  */
+    /* 右側詩句與邊緣的間距 */
+/* } */
+
+/* .banner-text-right p {
+    margin: 0 15px;  */
+    /* 詩句之間的間距 */
+    /* writing-mode: vertical-lr;  */
+    /* 垂直書寫模式，從左到右排列文字行 */
+    /* transform: rotate(180deg);  */
+    /* 旋轉180度，因為 vertical-lr 會讓文字從上到下，從右到左排列 */
+    /* text-orientation: upright;  */
+    /* 讓文字直立顯示，不會歪斜 */
+    /* line-height: 1.2;  */
+    /* 垂直文字的行高調整 */
+/* } */
+
+/* 響應式設計：小螢幕調整 */
+/* @media (max-width: 768px) {
+    .hero-banner {
+        height: 300px;  */
+        /* 小螢幕時高度可以縮小 */
+    /* }
+
+    .banner-title {
+        font-size: 2.5rem;
+        margin-left: 0; /* 小螢幕時取消微調 */
+    /* }  */
+
+    /* .banner-overlay {
+        flex-direction: column;  */
+        /* 小螢幕時文字垂直排列 */
+        /* justify-content: center;  */
+        /* 垂直居中 */
+        /* padding: 0 15px;
+    } */
+/* 
+    .banner-text-right {
+        display: none;  */
+        /* 小螢幕時隱藏右側詩句，避免畫面過於擁擠 */
+        /* 如果要保留，可以調整為水平排列 */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* margin-right: 0; */
+    /* } */
+
+    /* .banner-text-right p {
+        writing-mode: horizontal-tb; */
+         /* 小螢幕時變回水平書寫 */
+        /* transform: none;  */
+        /* 取消旋轉 */
+        /* text-align: center;
+        margin: 5px 0;
+    }
+} */
+
+/* 針對中文文字的字體優化（如果本地沒有，瀏覽器會使用預設字體） */
+/* @font-face {
+    font-family: 'Noto Sans TC';
+    src: url('https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans TC';
+    src: url('https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+} */
+
+
+
+
+/* --------------------------------------------------------------------------------------- */
+/* ===================================================================== */
+/* 通用和Reset樣式                               */
+/* ===================================================================== */
+body {
+    margin: 0;
+    font-family: 'Noto Sans TC', Arial, sans-serif; /* 使用思源黑體，如果載入失敗則使用 Arial */
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    overflow-x: hidden; /* 防止水平滾動條 */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button, input, select {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* ===================================================================== */
+/* Banner 區塊樣式 (來自上次的程式碼)              */
+/* ===================================================================== */
+.hero-banner {
+    width: 100%;
+    height: 450px; /* 根據圖片比例調整，使其看起來合適 */
+    background-image: url('image/banner.jpg'); /* 設定背景圖片為您提供的 Banner.jpg */
+    background-position: center ; /* 圖片居中 */
+    background-repeat: no-repeat; /* 不重複 */
+    background-size: cover; /* 圖片覆蓋整個區塊，並保持比例 */
+    position: relative; /* 為了讓子元素可以絕對定位 */
+    overflow: hidden; /* 防止內容溢出 */
+    display: flex; /* 使用 Flexbox 協助內容水平和垂直居中 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+}
+
+.banner-content {
+    position: absolute; /* 絕對定位在 .hero-banner 內 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* 啟用 Flexbox */
+    align-items: center; /* 垂直居中內容 */
+    justify-content: flex-end; 
+    /* 讓左右兩側內容推開 */
+    padding: 0 5%; /* 左右內邊距 */
+    box-sizing: border-box; /* 讓 padding 不會增加寬度 */
+}
+
+.main-title {
+    color: white;
+    font-size: 3.8rem; 
+    /* 根據圖片調整字體大小 */
+    font-weight: 700;
+     /* 設定粗體 */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); 
+    /* 文字陰影，增加可讀性 */
+    text-align: right;
+    margin: 0; 
+    /* 移除預設的 margin */
+    padding-right: 20%; 
+    /* 根據圖片觀察，購物專區略微偏左 */
+    flex-grow: 1;
+    /* 讓它佔據大部分空間，將右側文字推到右邊 */
+}
+
+.verse-container {
+    display: flex; /* 使用 Flexbox 排列詩句行 */
+    flex-direction: row-reverse; /* 關鍵：讓詩句行從右到左排列 */
+    writing-mode: vertical-lr;
+    align-items: flex-start; /* 讓詩句行頂部對齊 */
+    padding-right: 2%; /* 微調詩句距離右邊緣的距離 */
+}
+
+.right-text, right-text-2 {
+    color: white;
+    font-size: 1.1rem; /* 根據圖片調整字體大小 */
+    line-height: 1.5; /* 行高 */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* 文字陰影 */
+    margin: 0 18px; /* 詩句之間的水平間距 */
+    white-space: nowrap; 
+    /* 防止詩句自動換行 */
+    writing-mode: vertical-lr; /* 關鍵：文字垂直書寫，行從左到右 */
+    /* transform: rotate(180deg);  */
+    /* 關鍵：將整個垂直文字塊旋轉180度，使其看起來是行從右到左 */
+    text-orientation: upright; /* 確保文字是正立的，而不是歪斜的 */
+}
+
+
+/* ===================================================================== */
+/* 主導覽列樣式                                  */
+/* ===================================================================== */
+.main-header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    max-width: 1400px; /* 根據圖片觀察，導覽列有最大寬度 */
+    margin: 0 auto;
+    position: sticky; /* 粘性定位，滾動時固定在頂部 */
+    top: 0;
+    z-index: 1000; /* 確保在其他內容之上 */
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-right: 30px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    margin-right: 25px;
+}
+
+.nav-menu a {
+    color: #555;
+    font-size: 1rem;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #007bff;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.nav-icon {
+    font-size: 1.2rem;
+    color: #555;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-icon:hover {
+    color: #007bff;
+}
+
+/* ===================================================================== */
+/* 購物頁面容器樣式                               */
+/* ===================================================================== */
+.shopping-page-container {
+    display: flex;
+    max-width: 1400px; /* 保持與導覽列相同的最大寬度 */
+    margin: 30px auto;
+    padding: 0 50px; /* 左右內邊距 */
+    gap: 30px; /* 側邊欄與商品列表之間的間距 */
+}
+
+/* 側邊欄 (篩選器) 樣式 */
+.sidebar {
+    flex: 0 0 280px; /* 固定寬度 */
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    align-self: flex-start; /* 讓側邊欄從頂部開始 */
+}
+
+.filter-section {
+    margin-bottom: 25px;
+}
+
+.filter-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.custom-select {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.custom-select select {
+    width: 100%;
+    padding: 10px 15px;
+    -webkit-appearance: none; /* 移除預設下拉箭頭 */
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent; /* 防止 select 自己的背景色覆蓋 */
+}
+
+.select-arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* 讓點擊穿透到 select */
+    color: #888;
+    font-size: 0.8em;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="number"] {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.input-group span {
+    color: #777;
+}
+
+.date-input-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+.date-input-wrapper input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* 移除日期輸入框的預設箭頭 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.date-input-wrapper .date-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+}
+
+.clear-button {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+    background-color: #e0e0e0;
+}
+
+.keyword-search input[type="text"] {
+    width: calc(100% - 24px); /* 減去 padding */
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* 商品列表區塊樣式 */
+.product-list-section {
+    flex: 1; /* 佔據剩餘空間 */
+}
+
+.product-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.pagination-info, .sort-options {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.pagination-info i, .sort-options i {
+    color: #888;
+}
+
+/* 商品項目樣式 */
+.product-item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    overflow: hidden; /* 確保內容不溢出圓角 */
+}
+
+.product-image-container {
+    flex: 0 0 250px; /* 固定圖片寬度 */
+    height: 180px; /* 固定圖片高度 */
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 確保圖片填充容器並保持比例 */
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover .product-image {
+    transform: scale(1.05); /* 滑鼠懸停時圖片放大 */
+}
+
+.product-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.75em;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.product-tag.promo-tag {
+    background-color: #28a745; /* 綠色 */
+    left: auto;
+    right: 10px;
+}
+.product-tag.popular-tag {
+    background-color: #ffc107; /* 黃色 */
+    color: #333;
+    left: auto;
+    right: 10px; /* 預設右邊 */
+}
+/* 如果有兩個 tag，則熱門 tag 放在優惠 tag 左邊 */
+.product-tag.popular-tag + .promo-tag {
+    right: 60px; /* 調整位置，讓熱門標籤在優惠標籤左邊 */
+}
+
+
+.product-details {
+    flex: 1; /* 佔據大部分空間 */
+    padding: 20px 25px;
+}
+
+.product-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.product-location {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product-location i {
+    margin-right: 5px;
+    color: #999;
+}
+
+.product-description {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+    /* 限制描述文字行數 */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 限制顯示 3 行 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 15px;
+}
+
+.product-meta {
+    font-size: 0.85em;
+    color: #888;
+}
+
+.product-pricing {
+    flex: 0 0 150px; /* 固定價格區塊寬度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-left: 1px solid #eee;
+}
+
+.current-price {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.original-price {
+    font-size: 0.9em;
+    color: #999;
+    text-decoration: line-through;
+    margin-bottom: 15px;
+}
+
+.details-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+}
+
+/* 分頁器樣式 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.page-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #555;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.page-link:hover {
+    background-color: #f0f0f0;
+}
+
+.page-link.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* ===================================================================== */
+/* 頁尾樣式 (可選)                               */
+/* ===================================================================== */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+/* ===================================================================== */
+/* 響應式設計 (RWD)                               */
+/* ===================================================================== */
+
+/* Banner 區塊的響應式 (來自上次的程式碼) */
+@media (max-width: 992px) {
+    .hero-banner {
+        height: 400px; /* 中等螢幕時調整高度 */
+    }
+    .main-title {
+        font-size: 3rem;
+        padding-left: 3%;
+    }
+    .verse-line {
+        font-size: 1rem;
+        margin: 0 15px;
+    }
+    .shopping-page-container {
+        padding: 0 30px; /* 調整左右內邊距 */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Banner 區塊 */
+    .hero-banner {
+        height: 350px; /* 小螢幕時再調整高度 */
+        padding: 0 20px; /* 縮小左右邊距 */
+    }
+    .banner-content {
+        flex-direction: column; /* 小螢幕時內容垂直堆疊 */
+        justify-content: center; /* 垂直居中 */
+        text-align: center;
+        padding: 0 20px;
+    }
+    .main-title {
+        font-size: 2.5rem;
+        padding-left: 0; /* 取消左側 padding */
+        margin-bottom: 20px; /* 增加下方間距 */
+    }
+    .verse-container {
+        flex-direction: column; /* 詩句行也垂直堆疊 */
+        align-items: center; /* 詩句行居中 */
+        padding-right: 0; /* 取消右側 padding */
+    }
+    .verse-line {
+        writing-mode: horizontal-tb; /* 變回水平書寫 */
+        transform: none; /* 取消旋轉 */
+        margin: 5px 0; /* 垂直間距 */
+        text-align: center; /* 文字居中 */
+        font-size: 0.95rem;
+    }
+
+    /* 主導覽列 */
+    .main-header-nav {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+    .nav-left {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .nav-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-menu li {
+        margin: 0 10px 10px 10px;
+    }
+    .nav-right {
+        margin-top: 10px;
+    }
+    .nav-icon {
+        margin: 0 10px;
+    }
+
+    /* 購物頁面佈局 */
+    .shopping-page-container {
+        flex-direction: column; /* 側邊欄和商品列表垂直堆疊 */
+        padding: 0 20px;
+    }
+    .sidebar {
+        flex: 0 0 auto; /* 取消固定寬度 */
+        width: 100%; /* 佔滿可用寬度 */
+        margin-bottom: 30px;
+    }
+    .product-list-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .product-item {
+        flex-direction: column; /* 商品圖片和詳情垂直堆疊 */
+    }
+    .product-image-container {
+        width: 100%; /* 圖片佔滿寬度 */
+        height: 200px; /* 調整圖片高度 */
+        flex: none; /* 取消 flex 0 0 */
+    }
+    .product-details {
+        padding: 15px;
+    }
+    .product-description {
+        -webkit-line-clamp: 4; /* 允許更多行 */
+    }
+    .product-pricing {
+        flex-direction: row; /* 價格和按鈕水平排列 */
+        justify-content: space-between;
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #eee;
+        padding: 15px;
+    }
+    .current-price {
+        margin-bottom: 0;
+    }
+    .original-price {
+        margin-bottom: 0;
+        margin-left: auto; /* 將原價推到右邊 */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Banner 區塊 */
+    .hero-banner {
+        height: 300px;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
+    .verse-line {
+        font-size: 0.9rem;
+    }
+
+    /* 導覽列 */
+    .main-header-nav {
+        padding: 10px 15px;
+    }
+    .nav-logo {
+        font-size: 1.3rem;
+    }
+    .nav-menu li {
+        margin: 0 5px 5px 5px;
+    }
+    .nav-menu a {
+        font-size: 0.9rem;
+    }
+    .nav-icon {
+        margin: 0 8px;
+    }
+
+    /* 購物頁面 */
+    .shopping-page-container {
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+    .sidebar {
+        padding: 15px;
+    }
+    .filter-section {
+        margin-bottom: 20px;
+    }
+    .input-group input, .date-input-wrapper input {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+    .search-btn, .clear-button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+    .product-list-header {
+        padding: 10px 15px;
+    }
+    .product-image-container {
+        height: 180px;
+    }
+    .product-details {
+        padding: 10px 15px;
+    }
+    .product-title {
+        font-size: 1.2em;
+    }
+    .product-description {
+        font-size: 0.85em;
+        -webkit-line-clamp: 5;
+    }
+    .product-pricing {
+        padding: 10px 15px;
+    }
+    .current-price {
+        font-size: 1.4em;
+    }
+    .original-price {
+        font-size: 0.8em;
+    }
+    .details-button {
+        padding: 8px 15px;
+        font-size: 0.85em;
+    }
+    .pagination .page-link {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85em;
+    }
 }

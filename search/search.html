@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="search.css">
 </head>
-<body>
+<body> -->
      <!-- Banner -->
-  <header class="banner">
+  <!-- <header class="banner">
     <img src="../search/image/banner.jpg" alt="Banner 圖片" class="banner-img" />
     <div class="banner-text">
       <h1>購物專區</h1>
@@ -26,10 +26,10 @@
         最溫柔的片段
       </p>
     </div>
-  </header>
+  </header> -->
 
   <!-- 商品搜尋篩選區 -->
-  <section class="filters">
+  <!-- <section class="filters">
     <form>
       <p>分類</p>  
       <select>
@@ -89,10 +89,10 @@
     <form>
       <button type="submit">搜尋</button>
     </form>
-  </section>
+  </section> -->
 
   <!-- 商品清單 -->
-  <main class="product-list">
+  <!-- <main class="product-list">
     <div class="product">
       <img src="../search/image/view1.png" alt="摩洛哥圖片" />
       <div class="info">
@@ -121,13 +121,13 @@
         <div class="price">NT$18,800</div>
         <button>查看詳情</button>
       </div>
-    </div>
+    </div> -->
 
     <!-- 更多商品可持續加入 -->
-  </main>
+  <!-- </main> -->
 
   <!-- 分頁 -->
-  <footer class="pagination">
+  <!-- <footer class="pagination">
     <button>«</button>
     <button class="active">1</button>
     <button>2</button>
@@ -135,6 +135,314 @@
     <button>»</button>
   </footer>
 
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物專區</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="search.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="hero-banner">
+        <div class="banner-content">
+            
+            <h2 class="main-title">購物專區</h2>
+            <div class="verse-container">
+                  <p class="right-text">
+                    世界這麼大、<br />
+                    不必走得太遠<br />
+                    也能遇見<br />
+                    讓你心動的風景
+                  </p>
+                  <p class="right-text-2">
+                    跟著我們<br />
+                    把每一次出走<br />
+                    變成生活裡<br />
+                    最溫柔的片段
+                  </p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-header-nav">
+        <div class="nav-left">
+            <a href="#" class="nav-logo">我的商店</a>
+            <ul class="nav-menu">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">購物</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#" class="nav-icon"><i class="fa-solid fa-user"></i></a>
+            <a href="#" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </nav>
+
+    <div class="top-category-filter">
+        <div class="filter-wrapper">
+            <label for="top-category-select">分類</label>
+            <div class="custom-select top-select">
+                <select id="top-category-select">
+                    <option value="">全部</option>
+                    <option value="travel">旅行</option>
+                    <option value="outdoor">戶外</option>
+                    <option value="adventure">探險</option>
+                    <option value="culture">文化</option>
+                </select>
+                <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+        </div>
+        </div>
+
+    <main class="shopping-page-container">
+        <aside class="sidebar">
+            <div class="filter-section">
+                <label for="category">分類</label>
+                <div class="custom-select">
+                    <select id="category">
+                        <option value="group">旅行團</option>
+                        <option value="backpacker">背包客</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down select-arrow"></i>
+                </div>
+            </div>
+            <div class="filter-section">
+                <label for="theme">主題</label>
+                <div class="custom-select">
+                    <select id="theme">
+                        <option value="">選擇主題</option>
+                        <option value="mountains">山脈</option>
+                        <option value="lake">湖泊</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down select-arrow"></i>
+                </div>
+            </div>
+            <div class="filter-section">
+                <label for="location">所在地區</label>
+                <div class="custom-select">
+                    <select id="location">
+                        <option value="">選擇地區</option>
+                        <option value="europe">歐洲</option>
+                        <option value="asia">亞洲</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down select-arrow"></i>
+                </div>
+            </div>
+            <div class="filter-section">
+                <label for="good-for">適合</label>
+                <div class="custom-select">
+                    <select id="good-for">
+                        <option value="">選擇</option>
+                        <option value="solo">單人</option>
+                        <option value="family">家庭</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down select-arrow"></i>
+                </div>
+            </div>
+            <div class="filter-section">
+                <label for="choose">選擇</label>
+                <div class="custom-select">
+                    <select id="choose">
+                        <option value="">選擇</option>
+                        <option value="option1">選項1</option>
+                        <option value="option2">選項2</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down select-arrow"></i>
+                </div>
+            </div>
+
+            <div class="filter-section price-range">
+                <label>購買金額</label>
+                <div class="input-group">
+                    <input type="text" placeholder="最小金額">
+                    <span>~</span>
+                    <input type="text" placeholder="最大金額">
+                </div>
+                <button class="clear-button">清除金額</button>
+            </div>
+
+            <div class="filter-section date-range">
+                <label>選擇日期</label>
+                <div class="input-group">
+                    <div class="date-input-wrapper">
+                        <input type="date" placeholder="起始日期">
+                        <i class="fa-regular fa-calendar-days date-icon"></i>
+                    </div>
+                    <span>~</span>
+                    <div class="date-input-wrapper">
+                        <input type="date" placeholder="結束日期">
+                        <i class="fa-regular fa-calendar-days date-icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section days-range">
+                <label>選擇天數</label>
+                <div class="input-group">
+                    <input type="number" placeholder="天數">
+                    <i class="fa-solid fa-chevron-down select-arrow"></i>
+                </div>
+            </div>
+
+            <div class="filter-section keyword-search">
+                <label>關鍵字</label>
+                <input type="text" placeholder="請輸入關鍵字">
+            </div>
+
+            <button class="search-btn">搜尋</button>
+        </aside>
+
+        <section class="product-list-section">
+            <div class="product-list-header">
+                <div class="pagination-info">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>筆數</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="sort-options">
+                    <i class="fa-solid fa-images"></i>
+                    <span>金額排序</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image-container">
+                    <img src="shopping_images/image1.jpg" alt="厚沼澤" class="product-image">
+                    <div class="product-tag popular-tag">熱門</div>
+                    <div class="product-tag promo-tag">優惠</div>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">厚沼澤</h3>
+                    <p class="product-location"><i class="fa-solid fa-location-dot"></i> 波蘭</p>
+                    <p class="product-description">厚沼澤濕地是波蘭最大最珍貴的自然保護區之一，面積達592.23平方公里，橫跨普德拉謝省，位於波蘭的東北部生態走廊。厚沼澤的景觀特點是，巨大的低窪河流從300公里延伸至400公里並逐漸向周邊的沼澤過渡。是許多稀有動植物的棲息地，尤其是鳥類的主要繁殖區。每年，黑鸛和鷺鸕會隨著湖泊周圍的土地而繁殖。同時，厚沼澤也是許多水鳥的越冬地之一。</p>
+                    <div class="product-meta">
+                        <span class="product-date">2025.04.10 - 2025.04.12</span>
+                    </div>
+                </div>
+                <div class="product-pricing">
+                    <span class="current-price">NT$18,800</span>
+                    <span class="original-price">NT$20,800</span>
+                    <button class="details-button">查看詳細</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image-container">
+                    <img src="shopping_images/image2.jpg" alt="極光斯托拉" class="product-image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">極光斯托拉</h3>
+                    <p class="product-location"><i class="fa-solid fa-location-dot"></i> 冰島</p>
+                    <p class="product-description">極光斯托拉冰洞是位於冰島南部的一個冰洞，以其獨特的冰結構和絢麗的色彩而聞名。由於冰層反射陽光，冰洞內部呈現出令人驚嘆的藍色、綠色和紫色。遊客可以探索冰洞的各個部分，欣賞其壯麗的自然景觀。這個冰洞是一個自然的奇蹟，吸引了許多攝影愛好者和冒險家。由於冰洞結構不穩定，只有在專業嚮導的帶領下才能進入。</p>
+                    <div class="product-meta">
+                        <span class="product-date">2025.04.10 - 2025.04.12</span>
+                    </div>
+                </div>
+                <div class="product-pricing">
+                    <span class="current-price">NT$120,000</span>
+                    <span class="original-price"></span> <button class="details-button">查看詳細</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image-container">
+                    <img src="shopping_images/image3.jpg" alt="上耳環 熱氣球之旅" class="product-image">
+                    <div class="product-tag popular-tag">熱門</div>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">上耳環 熱氣球之旅</h3>
+                    <p class="product-location"><i class="fa-solid fa-location-dot"></i> 緬甸</p>
+                    <p class="product-description">上耳環熱氣球之旅將帶你飛越令人驚嘆的緬甸，欣賞其古老寺廟和佛塔。隨著熱氣球緩緩升空，你將被壯麗的景色所震撼，包括萬里無垠的平原和群山環繞的景色。這是一次難忘的經歷，讓你從空中俯瞰緬甸的壯麗景色。這次旅程是緬甸文化和自然之美的獨特體驗。</p>
+                    <div class="product-meta">
+                        <span class="product-date">2025.04.10 - 2025.04.12</span>
+                    </div>
+                </div>
+                <div class="product-pricing">
+                    <span class="current-price">NT$18,800</span>
+                    <span class="original-price">NT$20,800</span>
+                    <button class="details-button">查看詳細</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image-container">
+                    <img src="shopping_images/image4.jpg" alt="義大利 法國特瑞爾" class="product-image">
+                    <div class="product-tag promo-tag">優惠</div>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">義大利 法國特瑞爾</h3>
+                    <p class="product-location"><i class="fa-solid fa-location-dot"></i> 義大利</p>
+                    <p class="product-description">義大利和法國夾著了迷人的藝術和豐富的歷史，每個城市充滿著建築。無論是浪漫的羅馬或迷人的巴黎，這些城市都將帶給您獨特的體驗。義大利的藝術傑作和法國的博物館都散發著迷人的光芒。此外，法國的時裝和美食都值得您細細品味。這兩個國家都有其獨特的文化和令人驚嘆的景色。無論是義大利的歷史遺跡，還是法國的時尚魅力，都將給您留下深刻的印象。</p>
+                    <div class="product-meta">
+                        <span class="product-date">2025.04.10 - 2025.04.12</span>
+                    </div>
+                </div>
+                <div class="product-pricing">
+                    <span class="current-price">NT$18,800</span>
+                    <span class="original-price">NT$20,800</span>
+                    <button class="details-button">查看詳細</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image-container">
+                    <img src="shopping_images/image5.jpg" alt="加拿大 洛磯山脈" class="product-image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">加拿大 洛磯山脈</h3>
+                    <p class="product-location"><i class="fa-solid fa-location-dot"></i> 加拿大</p>
+                    <p class="product-description">加拿大洛磯山脈是北美洲西部的主要山脈，擁有壯麗的山峰、清澈的湖泊和茂密的森林。它是北美洲最高的山脈，也是落基山脈系統的一部分。洛磯山脈以其壯麗的景色和豐富的野生動物而聞名，是許多攝影愛好者和冒險家的天堂。洛磯山脈國家公園是加拿大最受歡迎的國家公園之一，擁有多種野生動物，包括北美灰熊、麋鹿和山羊等。此外，洛磯山脈也是徒步旅行、登山、滑雪和釣魚等戶外活動的理想場所。</p>
+                    <div class="product-meta">
+                        <span class="product-date">2025.04.10 - 2025.04.12</span>
+                    </div>
+                </div>
+                <div class="product-pricing">
+                    <span class="current-price">NT$18,800</span>
+                    <span class="original-price">NT$20,800</span>
+                    <button class="details-button">查看詳細</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image-container">
+                    <img src="shopping_images/image6.jpg" alt="美國 大峽谷" class="product-image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">美國 大峽谷</h3>
+                    <p class="product-location"><i class="fa-solid fa-location-dot"></i> 美國</p>
+                    <p class="product-description">美國大峽谷是世界上最壯麗的自然奇觀之一，深度達1500米，長約446公里。這是一個由科羅拉多河經過數百萬年侵蝕而成的峽谷。大峽谷以其壯麗的景色和多樣的岩層顏色而聞名。遊客可以欣賞到各種地貌，包括懸崖、瀑布和峽谷。它也是許多野生動物的棲息地，包括老鷹、山羊和許多爬行動物。大峽谷是一個自然的奇蹟，吸引了許多攝影愛好者和冒險家。</p>
+                    <div class="product-meta">
+                        <span class="product-date">2025.04.10 - 2025.04.12</span>
+                    </div>
+                </div>
+                <div class="product-pricing">
+                    <span class="current-price">NT$18,800</span>
+                    <span class="original-price">NT$20,800</span>
+                    <button class="details-button">查看詳細</button>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">4</a>
+                <a href="#" class="page-link">...</a>
+                <a href="#" class="page-link">99</a>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
